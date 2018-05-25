@@ -1,0 +1,26 @@
+<title>Bill records</title>
+
+<div class="container">
+
+    <div class="row">
+        <h4>Records</h4>
+    </div>
+
+    <div class="row">
+        <table class="six columns">
+            <tr>
+                <th>Bill type</th>
+                <th>Price</th>
+                <th>Time</th>
+            </tr>
+            {{#each records}}
+            <tr>
+                <td>{{type}}</td>
+                <td>{{price}}</td>
+                <td>{{ago_date}}</td>
+            </tr>
+             {{/each}}
+        </table>
+    </div>
+</div> 
+  

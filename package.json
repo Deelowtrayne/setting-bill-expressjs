@@ -1,0 +1,27 @@
+{
+  "name": "bill-settings-expressjs",
+  "version": "1.0.0",
+  "description": "Bill settings widget app using express and nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deelowtrayne/setting-bill-expressjs.git"
+  },
+  "author": "Luvuyo Sono",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deelowtrayne/setting-bill-expressjs/issues"
+  },
+  "homepage": "https://github.com/Deelowtrayne/setting-bill-expressjs#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "javascript-time-ago": "^1.0.30",
+    "moment": "^2.22.1",
+    "node-time-ago": "^1.0.0"
+  }
+}
