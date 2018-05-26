@@ -62,6 +62,7 @@ module.exports = function() {
 
   // processors
   function calculateBill(type) {
+    
     if (type === 'call' || type === 'sms') {
       
       let bill = {

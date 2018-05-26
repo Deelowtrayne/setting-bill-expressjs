@@ -78,6 +78,9 @@ app.get("/records/:type", function(req, res){
   }
 });
 
-app.listen(PORT, function () {
+app.listen(PORT, function (err) {
   console.log('App starting on port ', PORT);
+  if (err) {
+    //close the server and kill the process at PORT
+  }
 });
