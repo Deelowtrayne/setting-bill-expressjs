@@ -102,34 +102,3 @@ module.exports = function() {
   }
 }
 
-// settingsBill = BillWithSettings();
-
-// function updateSettings(){
-//   var call = newCallCost.value.trim();
-//   var sms = newSmsCost.value.trim();
-//   var criticalLevel = newCriticalLevel.value.trim();
-//   var warningLevel = newWarningLevel.value.trim();
-//   settingsBill.callCost(call);
-//   settingsBill.smsCost(sms);
-//   settingsBill.warning(warningLevel);
-//   settingsBill.critical(criticalLevel);
-// }
-
-// function updateSettingsBillDisplays(){
-//   txtCallTotalSettings.innerHTML = settingsBill.callTotal();
-//   txtSmsTotalSettings.innerHTML = settingsBill.smsTotal();
-//   txtTotalSettings.innerHTML = settingsBill.total();
-//   txtTotalSettings.classList.add(settingsBill.totalAlert());
-//   if (settingsBill.totalAlert() === 'danger')
-//     settingsAddBtn.disabled = true;
-// }
-
-// function processSettingsBill() {
-//   var checkedRadioBtn = document.querySelector("input[name='billItemTypeWithSettings']:checked");
-//   if (checkedRadioBtn)
-//     settingsBill.calculate(checkedRadioBtn.value);
-//   updateSettingsBillDisplays();
-// }
-
-// updateSettingsBtn.addEventListener('click', updateSettings);
-// settingsAddBtn.addEventListener('click', processSettingsBill);
