@@ -44,19 +44,15 @@ module.exports = function() {
     return smses.toFixed(2);
   }
 
-  function getTotalBill (){
+  function getTotalBill(){
     totalBill = calls + smses;
     return totalBill.toFixed(2);
   }
-  function getCallRecords() {
-    return billRecords.filter(bill => bill.type === 'call');
-  }
 
-  function getSmsRecords() {
-    return billRecords.filter(bill => bill.type === 'sms');
-  }
-
-  function getRecords() {
+  function getRecords(type) {
+    if (type) {
+      return billRecords.filter(bill => bill.type === 'call');
+    }
     return billRecords;
   }
 
@@ -102,8 +98,6 @@ module.exports = function() {
     smsTotal:     getSmsTotal,
     total:        getTotalBill,
     totalAlert:   totalPriceAlert,
-    callRecords:  getCallRecords,
-    smsRecords:   getSmsRecords,
     records:      getRecords
   }
 }

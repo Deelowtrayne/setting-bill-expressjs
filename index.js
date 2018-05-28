@@ -81,17 +81,9 @@ app.get("/records", function(req, res){
 
 app.get("/records/:type", function(req, res){
   let type = req.params.type;
-  if (type == 'calls') {
-    res.render('records', {records: settingsBill.callRecords()});
-  } 
-  else if (type == 'smses') {
-    res.render('records', {records: settingsBill.smsRecords()});
-  }
+  res.render('records', {records: settingsBill.records(type)});
 });
 
 app.listen(PORT, function (err) {
   console.log('App starting on port ', PORT);
-  if (err) {
-    //close the server and kill the process at PORT
-  }
 });
