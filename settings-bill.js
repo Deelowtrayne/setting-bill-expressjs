@@ -18,19 +18,19 @@ module.exports = function() {
   }
 
   function setSmsCost(value) {
-      if (smsCost !== value) {
+      if (smsCost !== value && value !== "") {
           smsCost = parseFloat(value);
       }
   }
 
   function setWarningLevel(value) {
-      if (warningLevel !== value) {
+      if (warningLevel !== value && value !== "") {
           warningLevel = parseFloat(value);
       }
   }
 
   function setCriticalLevel(value) {
-      if (criticalLevel !== value) {
+      if (criticalLevel !== value && value !== "") {
           criticalLevel = parseFloat(value);
       }
   }
