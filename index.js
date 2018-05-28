@@ -20,7 +20,18 @@ app.engine('handlebars', exphbs({
   helpers : { 
     'ago_date' : function() {
         return timeAgo(this.timestamp);
-    }
+    },
+    'timestamp' : function() {
+        let date = this.timestamp;
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        
+        let am_pm = hours < 12 ? "AM" : "PM";
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        
+        return hours + ":" + minutes + am_pm;
+    },
   }
 }));
 
