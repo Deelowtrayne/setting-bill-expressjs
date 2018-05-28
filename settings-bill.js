@@ -51,7 +51,7 @@ module.exports = function() {
 
   function getRecords(type) {
     if (type) {
-      return billRecords.filter(bill => bill.type === 'call');
+      return billRecords.filter(bill => bill.type === type);
     }
     return billRecords;
   }

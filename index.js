@@ -37,7 +37,6 @@ app.engine('handlebars', exphbs({
 
 app.set('view engine', 'handlebars');
 
-
 //middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
