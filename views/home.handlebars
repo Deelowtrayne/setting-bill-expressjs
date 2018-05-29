@@ -61,13 +61,13 @@
                 <h5>Settings</h5>
                 <form action="/settings" method="post">
                     <label for="exampleEmailInput">Call cost</label>
-                    <input class="u-full-width callCostSetting" name="callCost" type="number" step="any" placeholder="eg. 2.55">
+                    <input class="u-full-width callCostSetting" name="callCost" value="{{costs.call}}" type="number" step="any" placeholder="eg. 2.55">
                     <label for="exampleEmailInput">SMS cost</label>
-                    <input class="u-full-width smsCostSetting" name="smsCost" type="number" step="any" placeholder="eg. 0.65">
+                    <input class="u-full-width smsCostSetting" name="smsCost" type="number" value="{{costs.sms}}" step="any" placeholder="eg. 0.65">
                     <label for="">Warning level</label>
-                    <input class="u-full-width warningLevelSetting" name="warningLevel" type="number" step="any" placeholder="eg. 30.00" class="warningLevel">
+                    <input class="u-full-width warningLevelSetting" name="warningLevel" type="number" value="{{costs.warning}}" step="any" placeholder="eg. 30.00" class="warningLevel">
                     <label for="">Critical level</label>
-                    <input class="u-full-width criticalLevelSetting" name="criticalLevel" type="number" step="any" placeholder="eg. 65.00">
+                    <input class="u-full-width criticalLevelSetting" name="criticalLevel" type="number" step="any" value="{{costs.critical}}" placeholder="eg. 65.00">
                     <button class="button-primary updateSettings" type="submit" name="button">Update settings</button>
                 </form>
             </div>

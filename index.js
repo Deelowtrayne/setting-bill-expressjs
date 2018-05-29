@@ -47,7 +47,8 @@ app.get("/", function (req, res) {
     totalBill: settingsBill.total(),
     callsTotal: settingsBill.callTotal(),
     smsTotal: settingsBill.smsTotal(),
-    totalAlert: settingsBill.totalAlert()
+    totalAlert: settingsBill.totalAlert(),
+    costs: settingsBill.costs(),
   };
   res.render('home', context);
 });
