@@ -14,11 +14,11 @@ describe ("Tests the Settings-bill logic", function(){
     it('totalAlert function should return warning', function(){
         let settingsBill = SettingsBill();
         settingsBill.callCost(2.50);
-        settingsBill.warning(1.00);
+        settingsBill.warning(2.00);
         settingsBill.calculate('call');
         settingsBill.calculate('call');
          settingsBill.total()
-        assert.equal(settingsBill.totalAlert(), '');
+        assert.equal(settingsBill.totalAlert(), 'warning');
     });
 })
 

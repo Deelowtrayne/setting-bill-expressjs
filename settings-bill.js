@@ -83,10 +83,11 @@ module.exports = function () {
   }
 
   function totalPriceAlert() {
+
     if (totals.total > costValues.critical) {
       return 'danger';
     } 
-    else if (totals.total > costValues.critical) {
+    else if (totals.total > costValues.warning) {
       return 'warning';
     }
     // else just return nothing  
